@@ -1,0 +1,820 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-link {
+  color: #fc96c9ad !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff !important;  /* white on hover (optional) */
+}
+
+
+.arya
+{
+  text-decoration: none;
+  color: #fc96c9ad !important;
+  
+  
+}
+
+.arya:hover 
+{
+  color:white !important;
+}
+
+.h2,h2
+{
+  padding-left: 20px;
+  padding-top:10px;
+  font-size: 2rem;
+  
+}
+
+
+
+.small-img {
+  width: 120%;          /* let it fill parent column but be limited by max-width */
+  max-width: 700px;     /* largest size on wide screens */
+  height: auto;         /* keep aspect ratio */
+  object-fit: cover;    /* useful if you later set fixed height or use aspect-ratio */
+  display: block;
+  border-radius: 50%;   /* keeps circle */
+ /* border: 20px solid rgb(102, 22, 82) !important; */
+  
+}
+
+@media (max-width: 576px) {
+
+  .small-img {
+      width: 75%;        /* smaller image */
+      max-width: 200px;  /* hard limit for mobile */
+  }
+
+  .move-up {
+      margin-top: -10px;  /* reduce the upward pull */
+  }
+}
+
+@media (max-width: 600px) {
+  img.small-img {
+      width: 75% !important;
+      max-width: 200px !important;
+      height: auto !important;
+      margin-top: -10px !important;
+      border: none !important;   /* remove test border */
+  }
+}
+
+
+
+
+
+/* TABLET (≤768px)     */
+/* ------------------- */
+@media (max-width: 768px) {
+  .small-img {
+      width: 78%;
+      max-width: 280px;
+  }
+  .move-up {
+      margin-top: -10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.move-up {
+  margin-top: -30px;     /* adjust: -10px, -30px etc */
+}
+
+.ms 
+{
+    color:deeppink;
+}
+
+.frontend 
+{
+    color:white;
+}
+
+.bioinfo 
+{
+    color:white;
+}
+
+.hai 
+{
+ font-size: 70px;
+ color: white;
+}
+
+.roleline
+{
+    font-size: 30px;
+     color: white;
+     
+}
+
+
+
+.tagline {
+  
+  color: white;
+  font-size:18px;
+  
+  
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #b82982;
+    border-color: #b6379d;
+    margin-bottom: 20px;
+}
+
+.btn-success:hover 
+{
+    background-color: #8a206100;
+    border-color: #731573;
+}
+.social-icons i {
+  color: rgb(237, 159, 195) !important;
+  font-size: 25px;
+  
+}
+
+.social-icons i:hover {
+  color: #462739 !important;   /* cute pink */
+}
+
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text > *{
+           
+  padding: 0;
+     
+}
+
+
+
+
+/* Full container background */
+.hero-section{
+  background-image: url("image4.png");
+  
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 10px;  
+  
+  
+}
+
+
+
+
+
+
+/* ✅ Light transparent overlay */
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.433); /* light transparency */
+  
+}
+/* ✅ Keep text ABOVE overlay */
+.hero-section * {
+  position: relative;
+  
+}
+
+
+section {
+    scroll-margin-top: 90px;  /* set to your navbar height */
+}
+
+
+.card-img-top
+{
+  
+  
+  object-fit: cover;
+}
+
+.card
+{
+   width: 100%;
+   max-width: 20rem;
+   margin: 0 auto;
+
+
+}
+
+
+
+.card-body
+{
+  font-size: 14px;
+}
+
+.card-title
+{
+  font-size: 15px;
+}
+
+
+
+h3 {
+  font-weight: 600;
+  color: #2c2c2c;
+  padding-top: 100px;
+  padding-right: 20px;
+  margin-right: 20px;
+  
+  
+}
+
+
+
+
+
+#about-section {
+    position: relative;
+    background: url("image4.png") center/cover no-repeat;
+    min-height: 730px;  /* Increase height if needed */
+    margin:0;
+    padding:0;
+    
+    
+   
+}
+
+
+
+
+
+
+#about-section h2 {
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+
+#about-section p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 15px auto;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* project Section Background */
+.project-section {
+  position: relative;
+  background-image: url("image4.png");  /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10px 0;
+  width:100%;
+  min-height: 730px;
+  z-index: 1;
+  
+}
+
+
+
+/* Overlay for readability */
+.project-section::before {
+  
+  position: absolute;
+  inset: 0;
+  background: rgba(53, 51, 22, 0.889); /* light transparency */
+  
+  z-index: 1;
+}
+
+/* Bring content above overlay */
+.project-section * {
+  position: relative;
+  z-index: 3;
+}
+
+/* Card customization */
+.custom-card {
+  background: white;  /* semi-transparent white */
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.custom-card:hover {
+  transform: translateY(-20px);
+}
+
+/* Card Image */
+.custom-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body
+{
+  width: 20rem;
+  height:13rem;
+  
+  
+}
+
+.card-title
+{
+  font-size:20px;
+  color:white;
+}
+
+.card-text 
+{
+  font-size:15px;
+  padding-right:20px;
+  color:white;
+ 
+}
+
+.card 
+{
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:  #9a3f8b;
+    border-color:  #7c386e;
+    border-radius: 20px;
+}
+
+
+
+  .btn-primary:hover
+  {
+    background-color:   #8a206100;
+    border-color: #731573;
+  }
+
+ 
+  
+
+
+
+
+
+
+
+
+.contact-section {
+  position: relative;
+  background-image: url("image4.png");  /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10px 0;
+  width:100%;
+  z-index: 1;
+  
+  
+}
+
+
+
+
+
+.contact-box 
+{
+  text-decoration: none !important;
+ 
+}
+
+.contact-box:hover 
+{
+  color:rgb(124, 117, 117) !important;
+}
+
+#contact-box a
+{
+  font-size:20px;
+  color: #dd95cd;
+}
+ 
+.custom-card {
+    margin-bottom: 30px;   /* adjust 20, 30, 50px as you like */
+}
+
+
+
+.connect 
+{
+    color:deeppink;
+}
+
+
+.let
+{
+ font-size: 50px;
+ color: white;
+}
+
+.contact
+{
+  font-size:21px;
+  color:rgb(253, 253, 253);
+  
+}
+
+.free 
+{
+  font-size:21px;
+  color:rgb(198, 122, 173);
+}
+
+.form-box
+{
+  background: rgba(255, 255, 255, 0.08);
+  color:white;
+}
+
+.form-control 
+{
+  background-color: #704568;
+  border-color:#9c127e;
+  
+}
+
+.footer-icons i 
+{
+  color: rgb(237, 159, 195) !important;
+  font-size: 18px;
+}
+
+.footer-icons i:hover 
+{
+  color: #462739 !important; 
+}
+
+.footer p
+{
+  color: rgb(237, 159, 195) !important;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+ .about-tabs {
+  background: linear-gradient(90deg, #ad3fa0, #9c127e);
+    background-color: #ffffff;
+    border: 1px solid #b830a6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 5px;
+   
+  }
+
+  .tab-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #333;
+  }
+
+  .tab-btn:hover {
+    background-color: #de6ce6;
+  }
+
+  .tab-btn.active {
+    background-color: #520d7d;
+    
+  }
+
+  .tab-pane-content {
+    transition: all 0.3s ease;
+    padding-top: 35px;
+    
+  }
+
+  .edu-card{
+
+  background: rgba(255, 255, 255, 0.08);  /* semi-transparent white */
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+  color:white;
+
+  }
+
+  .edu-card:hover{
+    transform: translateY(-20px);
+  }
+
+  .certi-card:hover{
+    transform: translateY(-20px);
+  }
+
+
+  .certi-card{
+    
+  background: rgba(255, 255, 255, 0.08);  /* semi-transparent white */
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+  color:white;
+  height: 220px; /* adjust as needed */
+  width: 100%;
+  }
+
+
+  .cert-btn {
+    background-color: #b82982;
+    border-color: #b6379d;
+    color: #fff;
+    
+    border-radius: 8px;
+    width: 80%;
+    transition: 0.3s;
+  }
+
+  .cert-btn:hover {
+    background-color:   #8a206100;
+    border-color: #731573;
+  }
+
+
+
+
+
+
+
+
+
+/* skills section */
+
+
+  #skills-section
+{
+   
+    position: relative;
+    background: url("image4.png") center/cover no-repeat;
+    min-height: 730px;  /* Increase height if needed */
+    margin:0;
+    padding:0;
+   
+}
+
+
+   .about-tabs {
+  background: linear-gradient(90deg, #ad3fa0, #9c127e);
+  
+    background-color: #ffffff;
+    border: 1px solid #b830a6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 5px;
+   
+  }
+
+  .skill-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #333;
+  }
+
+  .skill-btn:hover {
+    background-color: #de6ce6;
+  }
+
+  .skill-btn.active {
+    background-color: #520d7d;
+    
+  }
+
+  .skill-pane-content {
+    transition: all 0.3s ease;
+    padding-top: 35px;
+    
+  }
+
+  .skill-card{
+
+  background: rgba(255, 255, 255, 0.08);  /* semi-transparent white */
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+  color:white;
+  
+
+
+  }
+
+  .skill-card:hover{
+    transform: translateY(-20px);
+  }
+
+  .web-btn
+  {
+    border-radius: 10px;
+    width:100px;
+    height:36px;
+    background-color: #992b9c;
+    border-color: #b6379d;
+    color: #fff;
+    
+  }
+
+  .web-btn:hover
+  {
+    background-color:   #8a206100;
+    border-color: #731573;
+  }
+  
+  .pl-btn
+  {
+    border-radius: 10px;
+    width:150px;
+    height:36px;
+    
+    background-color: #992b9c;
+    border-color: #b6379d;
+    color: #fff;
+  }
+
+  .pl-btn:hover 
+  {
+    background-color:   #8a206100;
+    border-color: #731573;
+
+  }
+
+  .dl-btn 
+  {
+
+    border-radius: 10px;
+    width:200px;
+    height:36px;
+    
+    background-color: #992b9c;
+    border-color: #b6379d;
+    color: #fff;
+
+  }
+
+  .dl-btn:hover 
+  {
+    background-color:   #8a206100;
+    border-color: #731573;
+
+  }
+
+  .bl-btn 
+  {
+    border-radius: 10px;
+    width:200px;
+    height:36px;
+    
+    background-color: #992b9c;
+    border-color: #b6379d;
+    color: #fff;
+  }
+
+  .bl-btn:hover 
+  {
+    background-color:   #8a206100;
+    border-color: #731573;
+
+  }
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+/* Remove any white space caused by nav or sections */
+body, html {
+  background-color: #0d021f;  /* or your gradient start color */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Ensure navbar spans full width */
+.navbar {
+  /*background: linear-gradient(90deg, #12002f, #4b0082);*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* For sections - match background */
+section {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix for container padding on small screens */
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
