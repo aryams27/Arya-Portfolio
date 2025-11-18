@@ -549,6 +549,19 @@ h3 {
     color: #333;
   }
 
+
+  .tab-container
+  {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tab-container::-webkit-scrollbar {
+  display: none; /* optional: hide scrollbar */
+}
+
+
+
   .tab-btn:hover {
     background-color: #de6ce6;
   }
