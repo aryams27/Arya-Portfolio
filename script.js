@@ -42,7 +42,7 @@
 });
 
 
-
+/*navbar open-close*/
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {
     const navbar = document.querySelector('.navbar-collapse');
